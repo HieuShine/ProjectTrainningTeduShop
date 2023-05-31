@@ -16,6 +16,6 @@ namespace ShopBanHang26_5.Models.Models
         public int Id { get; set; }
         [Required]
         public string Name { get; set; }
-        public IEnumerable<Menu> Menus { get; set; }  //Khóa ngoại connect
+        public virtual IEnumerable<Menu> Menus { get; set; }  //Khóa ngoại connect
     }
 }

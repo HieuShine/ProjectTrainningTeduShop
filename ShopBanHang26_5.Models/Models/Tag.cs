@@ -15,9 +15,14 @@ namespace ShopBanHang26_5.Models.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string Type { get; set; }
-        public ICollection<PostTag> PostTags { get; set; }
-        public ICollection<ProductTags> productTags { get; set; }
+        [MaxLength(50)]
+        [Required]
+        public string Name { set; get; }
+
+        [MaxLength(50)]
+        [Required]
+        public string Type { set; get; }
+        //public ICollection<PostTag> PostTags { get; set; }
+        //public ICollection<ProductTags> productTags { get; set; }
     }
 }

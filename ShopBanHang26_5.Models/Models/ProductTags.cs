@@ -12,8 +12,10 @@ namespace ShopBanHang26_5.Models.Models
     public class ProductTags
     {
         [Key]
+        [Column(Order = 1)]
         public int ProductId { get; set; }
         [Key]
+        [Column(Order = 2)]
         public int TagId { get; set; }
 
         [ForeignKey("ProductId")]

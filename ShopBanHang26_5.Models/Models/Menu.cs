@@ -24,9 +24,9 @@ namespace ShopBanHang26_5.Models.Models
         [Required]
         public bool Status { get; set; }
         [Required]
-        public string GroupId { get; set; }
+        public int GroupId { get; set; }
 
-        [ForeignKey("GroupID")]
+        [ForeignKey("GroupId")]
         public virtual MenuGroup MenuGroup { get; set; } ////ràng buộc khóa ngoại
     }
 }

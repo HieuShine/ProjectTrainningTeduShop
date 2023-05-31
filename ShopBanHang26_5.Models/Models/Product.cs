@@ -22,7 +22,8 @@ namespace ShopBanHang26_5.Models.Models
         public string Alias { get; set; }
         
         public string Image { get; set; }
-        public XElement MoreImage { get; set; }
+        [Column(TypeName ="xml")]
+        public string MoreImage { get; set; }
         public decimal Price { get; set; }
         public decimal? PromotionPrice { get; set; }
         public int? Warranty { get;}

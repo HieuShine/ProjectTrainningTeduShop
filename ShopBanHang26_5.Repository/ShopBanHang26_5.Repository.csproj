@@ -51,7 +51,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfraststructure\DbFactory.cs" />
+    <Compile Include="Interfraststructure\Disposable.cs" />
+    <Compile Include="Interfraststructure\IDbFactory.cs" />
+    <Compile Include="Interfraststructure\IRepository.cs" />
+    <Compile Include="Interfraststructure\IUnitOfWork.cs" />
+    <Compile Include="Interfraststructure\RepositoryBase.cs" />
+    <Compile Include="Interfraststructure\UnitOfWork.cs" />
+    <Compile Include="Migrations\202305310433460_addTable.cs" />
+    <Compile Include="Migrations\202305310433460_addTable.designer.cs">
+      <DependentUpon>202305310433460_addTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShopDbContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -62,6 +75,18 @@
       <Project>{5e0ecbdd-413e-4f4e-8415-17cadfcef099}</Project>
       <Name>ShopBanHang26_5.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ShopBanHang26_5.Models\ShopBanHang26_5.Models.csproj">
+      <Project>{00b6ac34-6d89-4e93-8096-d331da5f69f1}</Project>
+      <Name>ShopBanHang26_5.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202305310433460_addTable.resx">
+      <DependentUpon>202305310433460_addTable.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

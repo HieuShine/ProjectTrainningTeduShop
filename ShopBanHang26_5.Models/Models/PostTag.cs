@@ -12,13 +12,14 @@ namespace ShopBanHang26_5.Models.Models
     public class PostTag
     {
         [Key]
+        [Column(Order = 1)]
+
         public int PostId { get; set; }
         [ForeignKey("PostId")]
         public virtual Post Posts { get; set; }
         [Key]
-        [MaxLength(50)]
-        [Column(TypeName = "varchar")]
-        public string TagId { get; set; }
+        [Column(Order = 2)]
+        public int TagId { get; set; }
         [ForeignKey("TagId")]
         public virtual Tag Tag { get; set; }
     }
