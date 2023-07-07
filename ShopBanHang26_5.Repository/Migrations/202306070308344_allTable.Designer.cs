@@ -7,13 +7,13 @@ namespace ShopBanHang26_5.Repository.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class addTable : IMigrationMetadata
+    public sealed partial class allTable : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(addTable));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(allTable));
         
         string IMigrationMetadata.Id
         {
-            get { return "202305310433460_addTable"; }
+            get { return "202306070308344_allTable"; }
         }
         
         string IMigrationMetadata.Source

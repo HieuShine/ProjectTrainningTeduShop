@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ShopBanHang26_5.Repository.Repositories
 {
-    public interface IOrderRepository
+    public interface IOrderRepository:IRepository<Order>
     {
         //IEnumerable<Order> GetById(int Id);
         Order GetById(int id);

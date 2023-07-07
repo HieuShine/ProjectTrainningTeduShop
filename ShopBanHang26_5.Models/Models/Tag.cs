@@ -13,8 +13,9 @@ namespace ShopBanHang26_5.Models.Models
     public class Tag 
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
+        [Column(TypeName = "varchar", Order = 2)]
+        [MaxLength(50)]
+        public string Id { get; set; }
         [MaxLength(50)]
         [Required]
         public string Name { set; get; }

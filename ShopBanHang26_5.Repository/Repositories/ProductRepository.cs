@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ShopBanHang26_5.Repository.Repositories
 {
-    public interface IProductRepository
+    public interface IProductRepository:IRepository<Product>
     {
         Product GetProductById(int id);
     }

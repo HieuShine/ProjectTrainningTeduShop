@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ShopBanHang26_5.Repository.Repositories
 {
-    public interface IPostCategoryRepository
+    public interface IPostCategoryRepository:IRepository<PostCategory>
     {
         PostCategory GetPostCategoryById(int id);
     }

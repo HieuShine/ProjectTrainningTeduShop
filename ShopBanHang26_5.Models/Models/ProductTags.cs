@@ -15,8 +15,9 @@ namespace ShopBanHang26_5.Models.Models
         [Column(Order = 1)]
         public int ProductId { get; set; }
         [Key]
-        [Column(Order = 2)]
-        public int TagId { get; set; }
+        [Column(TypeName = "varchar", Order = 2)]
+        [MaxLength(50)]
+        public string TagId { get; set; }
 
         [ForeignKey("ProductId")]
         public virtual Product Products { get; set; }

@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class addTable : DbMigration
+    public partial class allTable : DbMigration
     {
         public override void Up()
         {
@@ -199,7 +199,7 @@
                 c => new
                     {
                         PostId = c.Int(nullable: false),
-                        TagId = c.Int(nullable: false),
+                        TagId = c.String(nullable: false, maxLength: 50, unicode: false),
                     })
                 .PrimaryKey(t => new { t.PostId, t.TagId })
                 .ForeignKey("dbo.Posts", t => t.PostId, cascadeDelete: true)
@@ -211,7 +211,7 @@
                 "dbo.Tags",
                 c => new
                     {
-                        Id = c.Int(nullable: false, identity: true),
+                        Id = c.String(nullable: false, maxLength: 50, unicode: false),
                         Name = c.String(nullable: false, maxLength: 50),
                         Type = c.String(nullable: false, maxLength: 50),
                     })
@@ -222,7 +222,7 @@
                 c => new
                     {
                         ProductId = c.Int(nullable: false),
-                        TagId = c.Int(nullable: false),
+                        TagId = c.String(nullable: false, maxLength: 50, unicode: false),
                     })
                 .PrimaryKey(t => new { t.ProductId, t.TagId })
                 .ForeignKey("dbo.Products", t => t.ProductId, cascadeDelete: true)

@@ -10,6 +10,7 @@ namespace ShopBanHang26_5.Repository.Interfraststructure
     public interface IRepository<T> where T : class
     {
         // Marks an entity as new
+        //void Add(T entity);
         T Add(T entity);
 
         // Marks an entity as modified

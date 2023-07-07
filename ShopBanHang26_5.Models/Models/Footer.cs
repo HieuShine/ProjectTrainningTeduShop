@@ -15,5 +15,6 @@ namespace ShopBanHang26_5.Models.Models
         public string Id { get; set; }
         [Required]
         public string Content { get; set; }
+        
     }
 }

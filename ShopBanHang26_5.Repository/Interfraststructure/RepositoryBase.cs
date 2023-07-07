@@ -51,7 +51,7 @@ namespace ShopBanHang26_5.Repository.Interfraststructure
         public virtual T Delete(int id)
         {
             var entity = dbSet.Find(id);
-            return dbSet.Remove(entity);
+           return dbSet.Remove(entity);
         }
         public virtual void DeleteMulti(Expression<Func<T, bool>> where)
         {

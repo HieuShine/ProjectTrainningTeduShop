@@ -58,9 +58,9 @@
     <Compile Include="Interfraststructure\IUnitOfWork.cs" />
     <Compile Include="Interfraststructure\RepositoryBase.cs" />
     <Compile Include="Interfraststructure\UnitOfWork.cs" />
-    <Compile Include="Migrations\202305310433460_addTable.cs" />
-    <Compile Include="Migrations\202305310433460_addTable.designer.cs">
-      <DependentUpon>202305310433460_addTable.cs</DependentUpon>
+    <Compile Include="Migrations\202306070308344_allTable.cs" />
+    <Compile Include="Migrations\202306070308344_allTable.designer.cs">
+      <DependentUpon>202306070308344_allTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -97,10 +97,9 @@
       <Name>ShopBanHang26_5.Models</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202305310433460_addTable.resx">
-      <DependentUpon>202305310433460_addTable.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202306070308344_allTable.resx">
+      <DependentUpon>202306070308344_allTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

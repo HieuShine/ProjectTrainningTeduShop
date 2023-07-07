@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ShopBanHang26_5.Repository.Repositories
 {
-    public interface ISystemConfigRepository
+    public interface ISystemConfigRepository:IRepository<SystemConfig>
     {
 
     }
