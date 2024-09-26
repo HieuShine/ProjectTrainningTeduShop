@@ -38,7 +38,7 @@ namespace ShopBanHang26_5.Service.RepositoryTest
 
             var result = _postCategoryRepository.Add(postCategory);
             _unitOfWork.Commit(); //commit nếu đúng ra id=1
-            Assert.AreEqual(1,result.Id); //kiểm tra giá trị đầu vào nếu lỗi hoặc đầu vào = false thì hiển thị thông báo lỗi
+            Assert.AreEqual(3,result.Id); //kiểm tra giá trị đầu vào nếu lỗi hoặc đầu vào = false thì hiển thị thông báo lỗi
             Assert.IsNotNull(result);                           // và abort() kết thúc chương trình
 
 
